@@ -29,11 +29,18 @@
     <meta name="twitter:card" value="summary_large_image"/>
 
     <!-- Start Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VSXDSP9W1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6VSXDSP9W1');
+    </script>
     <!-- End Google Analytics -->
 
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="assets/style.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -394,12 +401,19 @@
                 </div>
             </div>
         </footer>
+        <div class="banner-cookie banner" id="Banner">
+            <span>En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies</span>
+            <button type="button" class="banner-button" onclick="addAcceptanceCookie();checkAcceptanceCookie();">
+                <i class="fas fa-times banner-cross"></i>
+            </button>
+        </div>
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
         AOS.init();
-        function displayTextOnFeature (feature) {
+        checkAcceptanceCookie();
+        function displayTextOnFeature(feature) {
           if (document.getElementById('btn_' + feature).innerHTML === "En savoir +") {
             document.getElementById('text_' + feature).style.display = "block";
             document.getElementById(feature).style.filter = "brightness(0.5)";
@@ -408,6 +422,22 @@
             document.getElementById('text_' + feature).style.display = "none";
             document.getElementById(feature).style.filter = "brightness(1)";
             document.getElementById('btn_' + feature).innerHTML = "En savoir +";
+          }
+        }
+        function addAcceptanceCookie() {
+          var date = new Date();
+          date.setTime(date.getTime() + (60*60*24*7*1000)); // +7 days
+          var expires = "expires="+ date.toUTCString();
+          document.cookie = "acceptance=true;" + expires + ";path=/";
+        }
+        function checkAcceptanceCookie() {
+          var match = document.cookie.match(new RegExp('(^| )acceptance=([^;]+)'));
+          if (match) {
+            document.getElementById('Banner').style.opacity = 0;
+            document.getElementById('Banner').style.visibility = 'hidden';
+          }else{
+            document.getElementById('Banner').style.opacity = 1;
+            document.getElementById('Banner').style.visibility = 'visible';
           }
         }
     </script>
