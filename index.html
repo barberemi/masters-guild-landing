@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+<head>
+
+    <title>Masters Guild™</title>
+
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="cache-control: public, max-age=604800" name="cache-control"/>
+    <meta content="Améliorer votre personnage, ainsi que votre guilde afin de repousser les ennemis qui n'ont qu'un seul objectif : vous anéantir !"
+          name="description"/>
+
+    <meta content="Masters Guild™" property="og:title"/>
+    <meta content="Masters Guild™" property="og:site_name"/>
+    <meta content="Améliorer votre personnage, ainsi que votre guilde afin de repousser les ennemis qui n'ont qu'un seul objectif : vous anéantir !"
+          property="og:description"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://barberemi.github.io/game" property="og:url"/>
+<!--    <meta content="url" property="og:image"/>-->
+    <meta content="1200" property="og:image:width"/>
+    <meta content="630" property="og:image:height"/>
+    <meta content="fr-fr" property="og:locale"/>
+
+    <meta name="twitter:url" value="https://barberemi.github.io/game/"/>
+    <meta name="twitter:title" value="Masters Guild™"/>
+    <meta name="twitter:description"
+          value="Améliorer votre personnage, ainsi que votre guilde afin de repousser les ennemis qui n'ont qu'un seul objectif : vous anéantir !"/>
+    <meta name="twitter:card" value="summary_large_image"/>
+
+    <!-- Start Google Analytics -->
+    <!-- End Google Analytics -->
+
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/style.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="assets/images/icons/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="assets/images/icons/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="assets/images/icons/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="assets/images/icons/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="assets/images/icons/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="assets/images/icons/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="assets/images/icons/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="assets/images/icons/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="assets/images/icons/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="assets/images/icons/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="assets/images/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="assets/images/icons/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="assets/images/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="assets/images/icons/manifest.json" rel="manifest">
+    <link href="assets/images/icons/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+</head>
+<body>
+    <div id="App">
+
+        <!-- Svgs -->
+        <svg class="clip-svg academy">
+            <clipPath clipPathUnits="objectBoundingBox" id="academy-clip-path-1">
+                <polygon
+                        points="220 2.72 213.94 0.74 201.63 1.29 199.47 4.36 185.17 0.8 180.28 0.8 170.15 4.18 165.98 0.8 162.9 5.45 158.92 2.18 136.11 1.63 127.78 0 100.44 0.8 101.89 5.08 99 0.8 96.46 1.27 92.84 3.15 85.96 0.8 82.16 0.8 64.42 1.81 42.88 0.81 30.93 2.22 29.48 4.72 28.93 2.36 15.54 0.8 4.13 3.99 2.1 20.41 5.08 27.9 2.1 30.13 2.1 39.04 5.08 52.09 2.1 55.27 2.1 67.69 6.35 65.14 2.1 70.87 3.49 119.57 7.3 130.71 2.1 140.58 3.81 153.95 8.89 156.49 3.49 157.77 5.67 197.5 2.1 205.19 2.1 218.24 7.62 227.16 5.4 246.89 3.81 266.31 4.77 287.01 0 350.02 3.19 388.53 2.71 418.93 5.42 422.05 2.63 423.74 2.1 457.87 2.1 509.43 2.1 526.13 2.1 537.24 12.26 540 15.54 538.12 21.24 540 46.65 537.68 100.28 540 143.7 537.9 146.99 540 207.67 540 220 522.3 217.31 521.42 220 518.35 218.4 453.98 215.12 417.29 220 417.54 220 395.03 217.52 359.52 215.12 356.44 220 341.68 216.65 291.2 218.4 281.31 220 252.35 217.96 219.36 218.62 182.9 220 177.62 218.4 172.79 214.68 170.59 219.06 167.08 217.96 144.45 217.31 122.48 217.31 75.91 218.4 59.22 214.02 60.31 217.52 55.92 217.96 14.4 220 2.72"/>
+            </clipPath>
+        </svg>
+        <svg class="clip-svg academy">
+            <clipPath clipPathUnits="objectBoundingBox" id="academy-clip-path-2">
+                <polygon
+                        points="217.07 1.19 205.89 0 200.75 0 197.75 2.68 193.44 2.5 183.87 1.75 171.49 0 165.68 2.5 164.55 0 124.61 1.56 87.1 0.81 66.28 0 60.28 2.12 62.34 0 25.39 0 26.7 3.62 13.99 0 1.39 1.93 0.45 19.64 1.82 35.4 1.82 48.49 2.31 57.47 4.01 67.4 0.45 70.8 0.45 77.34 5.47 75.16 5.21 79.51 0.45 83.65 0.45 99.65 1.82 117.59 0.45 138.19 3.83 156.85 2.31 176.5 1.58 201.22 0 221.58 3.53 248.74 0.45 253.1 0.45 275.4 2.56 289.71 0.45 297.46 0.45 315.89 7.42 311.04 0 321.46 4.26 326.8 6.14 335.06 0.45 350.8 0.45 365.83 3.29 374.8 0.45 376.01 0 400.5 2.07 405.34 4.99 458.19 0.45 509.38 0.45 526.11 1.95 537.32 17.52 540 34.77 540 37.96 536.01 46.96 537.88 49.02 540 52.4 536.75 59.9 538.44 72.84 540 85.41 540 99.85 537.32 122.17 538.06 132.3 540 140.36 537.69 137.74 540 169.81 539 167.56 536.94 175.43 540 197.38 538.06 217.44 536.57 220 522.47 218.57 510.58 217.63 494.32 220 488.9 217.82 410.95 218.57 387.39 218.76 349.45 214.63 354.49 217.88 346.55 217.07 336.92 219.95 328.29 217.07 306.08 217.44 267.38 214.5 268.71 217.44 264.95 220 238.41 218.03 221.29 214.82 207.94 218.94 203.82 218.76 116.53 220 112.97 220 31.66 217.44 24.55 220 21.38 220 11.93 217.07 1.19"/>
+            </clipPath>
+        </svg>
+        <svg class="clip-svg academy">
+            <clipPath clipPathUnits="objectBoundingBox" id="academy-clip-path-3">
+                <polygon
+                        points="213.47 537.71 204.51 540 200.64 536.01 200.64 540 181.27 536.98 168.93 535.77 171.59 540 156.83 540 149.57 536.5 139.2 537.17 141.09 540 125.36 538.92 107.69 537.95 91.96 540 47.18 538.43 24.19 536.5 17.41 536.5 2.89 540 0 529.22 3.13 505.95 0 498.19 0 488.5 3.37 492.62 3.86 483.65 0 470.8 0 456.98 3.62 425.46 2.89 387.89 0 338.68 1.92 320.25 7.51 263.18 0 266.43 0 226.19 6.28 223.53 4.83 195.65 0 176.25 2.89 158.8 2.41 138.92 2.16 112.98 7.49 118.56 3.86 106.92 0 27.54 1.92 17.22 1.44 10.43 0 1.95 7 0 10.88 0 30.97 0.98 48.39 3.4 56.38 6.56 60.01 0 74.53 0 88.09 1.71 104.31 1.95 120.28 1.95 123.91 0 127.54 0 125.61 5.1 133.12 4.54 142.31 0 167.24 1.22 178.13 0 202.09 0 216.37 1.47 218.93 13.34 218.93 22.56 216.13 36.13 220 32.74 217.1 73.95 218.93 85.1 217.34 97.47 216.13 114.68 216.13 131.65 218.93 129.22 218.93 139.16 215.88 140.62 216.12 144.97 217.82 149.1 218.93 177.22 215.88 183.04 217.34 190.56 216.61 201.22 218.93 211.65 215.16 216.74 218.93 224.98 218.93 247.53 215.64 252.13 218.93 249.71 218.93 276.86 215.88 281.22 218.93 282.19 216.85 312.5 214.19 324.37 218.93 328.74 218.93 337.46 215.16 335.04 215.65 354.69 218.93 353.46 218.93 385.46 216.37 391.52 218.93 411.65 217.58 439.04 215.16 463.52 218.93 472.01 218.93 534.55 213.47 537.71"/>
+            </clipPath>
+        </svg>
+
+        <svg class="clip-svg">
+            <clipPath clipPathUnits="objectBoundingBox" id="about-clip-path">
+                <path d="M136.37,22.21l34.28,2.13,20.73,2.44,12.19-2.44h18.89l11-12.18h34.74l7.92,2.43L284,12.16l9.75,7.3L298,8.5l15.24,9.14-3,9.14,7.94-9.14,116.48,2.23,15.08,2.57,6.87-2.15,148,2.83,7.31-10.36L629,24.34l-5.48,7.93,36.27-9.87,7.77-.64,18.74-6.57L709.44,8.5h78.78l.3,2.86.8.1,3.62-3h50l23.77,6.09L895.33,17,888.41.86l.44-.86L928.8,1.87l4.49.73,1.44-.45L967.89,4l3.21,2.9-.41-3.08L1005,5.45l20.11,15.84V7.88l71.93.62L1116,6.66l15.84-2.44,20.73,3.66h23.16l23.77,2.44,24.38,5.8,104.84,8.22,2.89,6.42-.94-7.92,15.11-1.55,50.59-5.17h29l43.63-7,18.83,2.67-4,10.86L1494.66,20,1585,13l74.19,4.36-1.75-4.8,22.26-2.18L1732,16.12l6.55,4.29,39.28-8.28,104.72,4H1920V527h-25.27l-25-5.14,1.14-6.31L1702.68,527l-22.72-3,5.08,7.66-14.27,2.68-18.39-11.74-74.63,3L1548,523.08l-143.35,11.2L1337,529.57l-3.79-9.19L1330,530.65,1307.24,529l-17.85-7-53.56-8.65-33,8.65-77.23,4.33-8.78-3.79.56-11.54-9.76-.9-9.19,13-74.11,7.57L1013.5,527l3.79,7.32H981.72l-65.05-12.54L819,527l-28.39-3-20.34,3H725.45l-111-10.78L600.6,527,587,530.57l-9.87-12.43-72.9-3-43.75-7.73L457.94,513l-56.18,1.28-80.63,15.88-30.87,4.13L270.53,520.7l6,10.73-3.85,2.85-36.46,3.58-27-10.9-12.44-18.69-2.49,4.85-43.39-4.42L123,518.51l-31.7,13.35-23.58,3.86-16.31-5.15-15-3.43L0,527V25l30.55.23,25.64-2.39,1.33,4.91L63,19l6.73,1.15,26.64,6.16Z"/>
+            </clipPath>
+        </svg>
+
+        <svg class="clip-svg">
+            <clipPath clipPathUnits="objectBoundingBox" id="feature-clip-path">
+                <path d="M1600,4.81l-8.94-2.93-31.62,5.5-28.09,3,3.31-8.19-18.33-.24-14.54,7L1484.05,3l-39.91,1.48L1425.28.73,1368.76,0l-20.7,3-22.17,3-26.61,7.38h-20.69l-13.3-8.86h-31l4.43,8.86h-7.39L1223.9,0h-19.22L1176.6,4.43l-19.22,1.48-26.6,2.95L1108.6,5.91l-2.95,7.38L1096.78,0h-47.3l-60.6,7.38L963.75,0,889.84,4.43,844,8.86l-7.39-4.43h-37l-1.47,8.86L786.37,0,776,5.91l-93.75.4L647.6,2.57,603.13,0l-15,5.31L565.76,7.69l-29.9,2.63,1.72-8.26L490.14,0,484,9.88l-35.61,2.2L399.1,10.32,340.66,2.68,318.68,0l-.88,5.93L311.65,0,273.26,2h-7.21l-15,5-6.14-5L240.4,8.83,234.52,4l-33.66-.8L188.57.79,148.23,2l2.13,6.32L146.09,2l-3.74.7L137,5.44,126.85,2h-5.61L95.06,3.47,63.28,2,45.65,4.07,43.5,7.76l-.8-3.49L22.93,2,6.09,6.68,3.1,30.9,7.49,42,3.1,45.24V58.39L7.49,77.65,3.1,82.34v18.32L9.37,96.9,3.1,105.35l2.05,71.86,5.62,16.44L3.1,208.21l2.52,19.72,7.5,3.76-8,1.88,3.21,29.09L3.1,274v19.25l8.14,13.15L8,335.53,5.62,364.18,7,394.72l15.13,8.48-3,10.34L5.07,420.71,0,487.69l1.09,13.16,13.69,2.78-12.87,7.2L4.7,544.51,4,589.37,8,594l-4.11,2.5L3.1,646.82V763.93l15,4.07,4.85-2.78,8.4,2.78,37.5-3.43L148,768l64.08-3.1,4.85,3.1h29l6.37-11.35L250.1,768l55.56-3.89,57.07-4.72,7.54,8.61h21l-3.14-10.92L465.6,768l14.87-4.33L483,768h17.4L513,761.48l19.81,3.07,17.56-5.27-6.6,5.27,32.1,3.45,40.88-7.4,4,7.4h22.42l14.51-4.77,63.69,3.29,62.08-5.9L844,764l14.83,4,10.35-5.91,22.12,2,4.48-3.51,5.92-1.48L895.75,768h8.87l7.39-5.91,42.87,3,23.65,3,39.91-5.91L1135.89,765l5.23,3H1150l-4.43-8.86,17.74-3,34,5.91,19.22-1.47,10.35,3,7.39,4.43,8.87-1.48,3-5.9,71,3,20.7-5.91-4.17,5.74,3.45.1,6.63-4.36,19.21,3,14.79,4.43,73.9,1.48,50.26-7.38h10.35l10.34,4.43,25.13-5.91,20.7,8.86h13.49l18.2-26.12-4-1.29,4-4.54-2.36-95L1592.79,587l7.21.37V554.1l-3.65-52.39-3.56-4.54,7.21-21.79-5-74.48,2.59-14.58,2.36-42.73-3-48.68,1-24.26,2-7.78-2.36-7.13-5.5-3.25,6.47-5.18L1597,213.92l-1-32.41V112.79l1.62-24.63-6.47,1.62,5.17-6.48L1597,22Z"/>
+            </clipPath>
+        </svg>
+
+        <!-- Header -->
+        <section id="Header">
+            <div class="top-bar d-none d-lg-block">
+                <div class="social">
+                    <span>Nous suivre</span>
+                    <a href="https://www.facebook.com/remi.barbe1/" class="social-btn" rel="noopener" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/Rem_Barbe" class="social-btn" rel="noopener" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <picture>
+                <img alt="" class="img-fluid d-md-none" src="assets/images/home-height.jpg">
+            </picture>
+
+            <div class="content">
+                <div class="meta">
+                    <picture>
+                        <div>
+                            <img alt="Ruined King: A League of Legends Story" src="assets/images/logo.png">
+                            <h1>Master's Guild</h1>
+                            <div>Devient la nouvelle Légende !</div>
+                        </div>
+                    </picture>
+                </div>
+                <aside id="Signup">
+                    <div>
+                        <h2>
+                            <span>S'abonner</span>
+                            <span>aux dernières infos</span>
+                        </h2>
+                        <div class="formwrapper">
+                            <form class="form" action="https://mailthis.to/barbe.remi25+newletter-game@gmail.com" method="POST">
+                                <div class="d-md-flex d-lg-block justify-content-md-center">
+                                    <div class="form-group mr-md-2 mr-lg-0">
+                                        <label for="Email">Adresse e-mail</label>
+                                        <div>
+                                            <input type="email" name="Email" id="Email" placeholder="Obligatoire" required="required" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="Agree" id="Agree" required="required" class="custom-control-input">
+                                    <label for="Agree" class="custom-control-label">
+                                        <span>J’accepte de recevoir des e-mails occasionnels de la société RemCorp, tels que des actus, des offres et des sondages. Consultez notre <a href="https://euw.leagueoflegends.com/fr/legal/privacy" target="_blank" rel="noopener">politique de confidentialité</a> pour plus de détails sur la façon dont vos informations peuvent être utilisées.</span>
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn cracked">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 49.27">
+                                        <g>
+                                            <polygon points="241.56 35.25 260 44.98 225.69 44.98 229.9 43.18 234.27 40.8 236.6 38.63 241.56 35.25"></polygon>
+                                            <path d="M225.13,45H135.66l-5.73,4.29L124.2,45H12.2l.05-3,.61-.73-.71-2.72,6.15-3.24V12.85L6.9,4.78H43.71s-12,9.22-10.5,8.71S46.53,9.14,46.53,9.14l3.58-4.36h77.06L129.93,0l2.76,4.78h77.06l3.59,4.36,2.81-4.36H253l-11.4,8.07v21.9L238,36.05l-3.11,3-4.27,2.19Z"></path>
+                                            <polygon points="11.66 44.69 0 46.66 9.12 39.69 10.72 41.23 10.3 42.39 11.66 44.69"></polygon>
+                                        </g>
+                                    </svg>
+                                    <span>S'inscrire</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Date Sortie -->
+        <section id="Launch">
+            <div class="content" data-aos="zoom-in">
+                <h2>Sortie en 2021<br/>sur tous les navigateurs</h2>
+            </div>
+        </section>
+
+        <!-- Académies -->
+        <section class="academies-bg" id="Academies">
+            <div class="content">
+                <h2 class="mb-3 mb-lg-5">Les académies</h2>
+                <div class="academies">
+
+                    <span class="academy" data-aos="flip-left">
+                        <div class="infinite-sprite-warrior"></div>
+                        <div class="meta">
+                            <div class="name">Guerrier</div>
+                        </div>
+                    </span>
+
+                    <span class="academy" data-aos="flip-left">
+                        <div class="infinite-sprite-hunter"></div>
+                        <div class="meta">
+                            <div class="name">Archer</div>
+                        </div>
+                    </span>
+
+                    <span class="academy" data-aos="flip-left">
+                        <div class="infinite-sprite-magician"></div>
+                        <div class="meta">
+                            <div class="name">Mage</div>
+                        </div>
+                    </span>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Description -->
+        <section id="Description">
+            <div class="content" data-aos="zoom-in">
+                <h2 class="mb-3">Résister face à l'envahisseur</h2>
+                <p>Améliorer votre personnage, ainsi que votre guilde afin de repousser les ennemis qui n'ont qu'un seul objectif : vous anéantir !</p>
+            </div>
+        </section>
+
+        <!-- Fonctionnalités -->
+        <section class="academies-bg" id="Features">
+            <h2 class="mb-5">Les fonctionnalités</h2>
+
+            <!-- Personnage -->
+            <div class="feature" data-aos="zoom-in">
+                <div class="meta">
+                    <h3 class="mb-1">Équipements de personnage</h3>
+                    <span class="btn cracked">
+                        <svg viewBox="0 0 260 49.27" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <polygon
+                                        points="241.56 35.25 260 44.98 225.69 44.98 229.9 43.18 234.27 40.8 236.6 38.63 241.56 35.25"/>
+                                <path d="M225.13,45H135.66l-5.73,4.29L124.2,45H12.2l.05-3,.61-.73-.71-2.72,6.15-3.24V12.85L6.9,4.78H43.71s-12,9.22-10.5,8.71S46.53,9.14,46.53,9.14l3.58-4.36h77.06L129.93,0l2.76,4.78h77.06l3.59,4.36,2.81-4.36H253l-11.4,8.07v21.9L238,36.05l-3.11,3-4.27,2.19Z"/>
+                                <polygon points="11.66 44.69 0 46.66 9.12 39.69 10.72 41.23 10.3 42.39 11.66 44.69"/>
+                            </g>
+                        </svg>
+                        <span id="btn_feature_items" onClick="displayTextOnFeature('feature_items')">En savoir +</span>
+                    </span>
+                </div>
+                <picture>
+                    <div id="text_feature_items">
+                        <h3>Équipements de personnage</h3>
+                        <p>Équipez votre personnage avec des objets récupérés lors de vos combats, d'explorations ou d'échanges afin de devenir encore plus puissant.</p>
+                    </div>
+                    <img id="feature_items" alt="Équipements de personnage" class="img-fluid mb-3 mb-md-0" src="assets/images/bilgewater.jpg">
+                </picture>
+            </div>
+
+            <!-- Compétences -->
+            <div class="feature" data-aos="zoom-in">
+                <div class="meta">
+                    <h3 class="mb-1">Compétences de personnage</h3>
+                    <span class="btn cracked">
+                        <svg viewBox="0 0 260 49.27" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <polygon
+                                        points="241.56 35.25 260 44.98 225.69 44.98 229.9 43.18 234.27 40.8 236.6 38.63 241.56 35.25"/>
+                                <path d="M225.13,45H135.66l-5.73,4.29L124.2,45H12.2l.05-3,.61-.73-.71-2.72,6.15-3.24V12.85L6.9,4.78H43.71s-12,9.22-10.5,8.71S46.53,9.14,46.53,9.14l3.58-4.36h77.06L129.93,0l2.76,4.78h77.06l3.59,4.36,2.81-4.36H253l-11.4,8.07v21.9L238,36.05l-3.11,3-4.27,2.19Z"/>
+                                <polygon points="11.66 44.69 0 46.66 9.12 39.69 10.72 41.23 10.3 42.39 11.66 44.69"/>
+                            </g>
+                        </svg>
+                        <span id="btn_feature_skills" onClick="displayTextOnFeature('feature_skills')">En savoir +</span>
+                    </span>
+                </div>
+                <picture>
+                    <div id="text_feature_skills">
+                        <h3>Compétences de personnage</h3>
+                        <p>Choisissez les compétences que vous souhaitez avoir en combat.</p>
+                    </div>
+                    <img id="feature_skills" alt="Compétences de personnage" class="img-fluid mb-3 mb-md-0" src="assets/images/bilgewater.jpg">
+                </picture>
+            </div>
+
+            <!-- Constructions -->
+            <div class="feature" data-aos="zoom-in">
+                <div class="meta">
+                    <h3 class="mb-1">Construction de bâtiments</h3>
+                    <span class="btn cracked">
+                        <svg viewBox="0 0 260 49.27" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <polygon
+                                        points="241.56 35.25 260 44.98 225.69 44.98 229.9 43.18 234.27 40.8 236.6 38.63 241.56 35.25"/>
+                                <path d="M225.13,45H135.66l-5.73,4.29L124.2,45H12.2l.05-3,.61-.73-.71-2.72,6.15-3.24V12.85L6.9,4.78H43.71s-12,9.22-10.5,8.71S46.53,9.14,46.53,9.14l3.58-4.36h77.06L129.93,0l2.76,4.78h77.06l3.59,4.36,2.81-4.36H253l-11.4,8.07v21.9L238,36.05l-3.11,3-4.27,2.19Z"/>
+                                <polygon points="11.66 44.69 0 46.66 9.12 39.69 10.72 41.23 10.3 42.39 11.66 44.69"/>
+                            </g>
+                        </svg>
+                        <span id="btn_feature_constructions" onClick="displayTextOnFeature('feature_constructions')">En savoir +</span>
+                    </span>
+                </div>
+                <picture>
+                    <div id="text_feature_constructions">
+                        <h3>Construction de bâtiments</h3>
+                        <p>Construisez toute une palette de bâtiments afin d'obtenir des bonus pour vous, mais aussi pour votre guilde.</p>
+                    </div>
+                    <img id="feature_constructions" alt="Construction de bâtiments" class="img-fluid mb-3 mb-md-0" src="assets/images/bilgewater.jpg">
+                </picture>
+            </div>
+
+            <!-- Guild -->
+            <div class="feature" data-aos="zoom-in">
+                <div class="meta">
+                    <h3 class="mb-1">Gestion de guilde</h3>
+                    <span class="btn cracked">
+                        <svg viewBox="0 0 260 49.27" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <polygon
+                                        points="241.56 35.25 260 44.98 225.69 44.98 229.9 43.18 234.27 40.8 236.6 38.63 241.56 35.25"/>
+                                <path d="M225.13,45H135.66l-5.73,4.29L124.2,45H12.2l.05-3,.61-.73-.71-2.72,6.15-3.24V12.85L6.9,4.78H43.71s-12,9.22-10.5,8.71S46.53,9.14,46.53,9.14l3.58-4.36h77.06L129.93,0l2.76,4.78h77.06l3.59,4.36,2.81-4.36H253l-11.4,8.07v21.9L238,36.05l-3.11,3-4.27,2.19Z"/>
+                                <polygon points="11.66 44.69 0 46.66 9.12 39.69 10.72 41.23 10.3 42.39 11.66 44.69"/>
+                            </g>
+                        </svg>
+                        <span id="btn_feature_guild" onClick="displayTextOnFeature('feature_guild')">En savoir +</span>
+                    </span>
+                </div>
+                <picture>
+                    <div id="text_feature_guild">
+                        <h3>Gestion de guilde</h3>
+                        <p>Fondez votre propre guilde, ou rejoignez en une afin d'avoir accès à une multitude d'autres fonctionnalités.</p>
+                    </div>
+                    <img id="feature_guild" alt="Gestion de guilde" class="img-fluid mb-3 mb-md-0" src="assets/images/bilgewater.jpg">
+                </picture>
+            </div>
+
+            <!-- Exploration -->
+            <div class="feature" data-aos="zoom-in">
+                <div class="meta">
+                    <h3 class="mb-1">Exploration de zones</h3>
+                    <span class="btn cracked">
+                        <svg viewBox="0 0 260 49.27" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <polygon
+                                        points="241.56 35.25 260 44.98 225.69 44.98 229.9 43.18 234.27 40.8 236.6 38.63 241.56 35.25"/>
+                                <path d="M225.13,45H135.66l-5.73,4.29L124.2,45H12.2l.05-3,.61-.73-.71-2.72,6.15-3.24V12.85L6.9,4.78H43.71s-12,9.22-10.5,8.71S46.53,9.14,46.53,9.14l3.58-4.36h77.06L129.93,0l2.76,4.78h77.06l3.59,4.36,2.81-4.36H253l-11.4,8.07v21.9L238,36.05l-3.11,3-4.27,2.19Z"/>
+                                <polygon points="11.66 44.69 0 46.66 9.12 39.69 10.72 41.23 10.3 42.39 11.66 44.69"/>
+                            </g>
+                        </svg>
+                        <span id="btn_feature_explorations" onClick="displayTextOnFeature('feature_explorations')">En savoir +</span>
+                    </span>
+                </div>
+                <picture>
+                    <div id="text_feature_explorations">
+                        <h3>Exploration de zones</h3>
+                        <p>Voyager dans des zones différentes afin de gagner de l'équipements et de l'expérience et ainsi avoir accès à de meilleures zones.</p>
+                    </div>
+                    <img id="feature_explorations" alt="Exploration de zones" class="img-fluid mb-3 mb-md-0" src="assets/images/bilgewater.jpg">
+                </picture>
+            </div>
+
+            <!-- Fight -->
+            <div class="feature" data-aos="zoom-in">
+                <div class="meta">
+                    <h3 class="mb-1">Combats au tour par tour</h3>
+                    <span class="btn cracked">
+                        <svg viewBox="0 0 260 49.27" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <polygon
+                                        points="241.56 35.25 260 44.98 225.69 44.98 229.9 43.18 234.27 40.8 236.6 38.63 241.56 35.25"/>
+                                <path d="M225.13,45H135.66l-5.73,4.29L124.2,45H12.2l.05-3,.61-.73-.71-2.72,6.15-3.24V12.85L6.9,4.78H43.71s-12,9.22-10.5,8.71S46.53,9.14,46.53,9.14l3.58-4.36h77.06L129.93,0l2.76,4.78h77.06l3.59,4.36,2.81-4.36H253l-11.4,8.07v21.9L238,36.05l-3.11,3-4.27,2.19Z"/>
+                                <polygon points="11.66 44.69 0 46.66 9.12 39.69 10.72 41.23 10.3 42.39 11.66 44.69"/>
+                            </g>
+                        </svg>
+                        <span id="btn_feature_fights" onClick="displayTextOnFeature('feature_fights')">En savoir +</span>
+                    </span>
+                </div>
+                <picture>
+                    <div id="text_feature_fights">
+                        <h3>Combats au tour par tour</h3>
+                        <p>Système de combat au tour par tour, où il vous faudra correctement choisir vos actions afin de réussir à battre vos ennemis.</p>
+                    </div>
+                    <img id="feature_fights" alt="Combats au tour par tour" class="img-fluid mb-3 mb-md-0" src="assets/images/bilgewater.jpg">
+                </picture>
+            </div>
+        </section>
+
+        <!-- Barre Footer -->
+        <div class="footer-separation">
+            <img alt="" class="img-fluid" src="assets/images/footer-separation.svg">
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="justify-content-md-between align-items-center">
+                <div class="social">
+                    <a href="https://www.facebook.com/remi.barbe1/" class="social-btn" rel="noopener" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/Rem_Barbe" class="social-btn" rel="noopener" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column-reverse flex-md-column justify-content-md-between text-center">
+                <div class="legal">
+                    <p>© 2021 RemCorp</p>
+                    <div class="links mb-md-4">
+                        <a href="#" class="" rel="noopener" target="_blank">
+                            Conditions d’utilisation
+                        </a>
+                        <a href="#" class="" rel="noopener" target="_blank">
+                            Politique de confidentialité
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pegi">
+                    <img src="assets/images/pegi-12.jpeg" alt="PEGI 12" class="img-fluid pegi">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        AOS.init();
+        function displayTextOnFeature (feature) {
+          if (document.getElementById('btn_' + feature).innerHTML === "En savoir +") {
+            document.getElementById('text_' + feature).style.display = "block";
+            document.getElementById(feature).style.filter = "brightness(0.5)";
+            document.getElementById('btn_' + feature).innerHTML = "Annuler";
+          } else {
+            document.getElementById('text_' + feature).style.display = "none";
+            document.getElementById(feature).style.filter = "brightness(1)";
+            document.getElementById('btn_' + feature).innerHTML = "En savoir +";
+          }
+        }
+    </script>
+
+</body>
+</html>
